@@ -1,5 +1,5 @@
 body {
-    background: #f6fdf3;
+    background: #fff;
 }
 
 .thumbnail img {
@@ -16,5 +16,9 @@ body {
 
 #delete-form{
     display: inline;
+}
+
+h1 {
+    color: steelblue;
 }
 
