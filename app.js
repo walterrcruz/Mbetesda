@@ -25,9 +25,9 @@ app.locals.des = require("./betesda.json");
 const port = process.env.PORT || 3000;
 // mongoose.connect(process.env.DATABASEURL);
 // mongoose.connect("mongodb://localhost/betesda", { useMongoClient: true });
-mongodb: //adminBetesda:Trigger88@ds149335.mlab.com:49335/betesda
+mongoose.connect("mongodb://adminBetesda:Trigger88@ds149335.mlab.com:49335/betesda", { useMongoClient: true });
 
-    app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));

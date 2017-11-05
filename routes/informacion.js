@@ -23,6 +23,9 @@ router.get('/valores', (req, res) => {
 router.get('/seminario', (req, res) => {
     res.render('informacion/vision')
 })
+router.get('/grupos', (req, res) => {
+    res.render('informacion/grupos')
+})
 
 
 module.exports = router
