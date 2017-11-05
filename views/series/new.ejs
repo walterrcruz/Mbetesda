@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+
+    <div class="container">
+        <div class="row">
+            <h1 style="text-align: center">Agregar Sermon</h1>
+            <div style="width: 80%; margin:40px auto;">
+                <form action="/serie" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="title" placeholder="Titulo de predica"></input>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="serie" placeholder="Titulo de Serie"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="predicador" placeholder="Nombre de Predicador"></input>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="video" placeholder="video url"></input>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" type="text" name="description" placeholder="Enter Description here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-info btn-block">Submit</button>
+                    </div>
+                </form>
+                <a href="/serie">Go Back</a>
+            </div>
+        </div>
+    </div>
+
+    <% include ../partials/footer %>

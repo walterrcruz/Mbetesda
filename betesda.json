@@ -1,0 +1,46 @@
+{
+    "pageTitle": "Desarrollo",
+    "desarrollo": {
+        "clase1": {
+            "title": "101",
+            "image": {
+                "src": "/assets/images2/stacked.jpg"
+            },
+            "description": {
+                "title": "Clase 101",
+                "paragraph": "Esta es la primera clase de Desarrollo con Propósito. Cada persona o familia que quiera conocer nuestra iglesia y hacerse miembro inicia dando su primer paso en esta CLASE. En ella les explicamos y les enseñamos el Propósitos y el significado por el cual fue creado y puesto en la tierra. También enseñamos nuestra Estrategia de una iglesia con propósito. Aprendemos nuestras declaraciones de fe de nuestra iglesia. Y una cosa importante firman su pacto de compromiso con Dios y con la iglesia."
+            }
+        },
+        "clase2": {
+            "title": "201",
+            "image": {
+                "src": "/assets/images2/stacked.jpg"
+            },
+            "description": {
+                "title": "Clase 201",
+                "paragraph": "La clase sobre Madurez ayuda a los creyentes en Cristo a vivir la fe cristiana. Esta clase enseña un conjunto de habilidades y hábitos que los creyentes deben adquirir para llegar a ser miembros maduros del cuerpo de Cristo."
+            }
+
+        },
+        "clase3": {
+            "title": "301",
+            "image": {
+                "src": "/assets/images2/stacked.jpg"
+            },
+            "description": {
+                "title": "Clase 301",
+                "paragraph": "Nuestra clase de Ministerio comienza con la premisa de que Dios nos ha creado a cada uno de nosotros para un ministerio específico que nos ha asignado aun antes de nacer. A tal efecto nos equipó otorgándonos distintas capacidades que nos permiten cumplir ese propósito. Resumimos estas capacidades con el acróstico: “FORMA”."
+            }
+        },
+        "clase4": {
+            "title": "401",
+            "image": {
+                "src": "/assets/images2/stacked.jpg"
+            },
+            "description": {
+                "title": "Clase 401",
+                "paragraph": "Tenemos una cuarta clase que trata sobre la Misión. Allí enseñamos cinco cosas diferentes: Movimiento misionero, Tu Testimonio personal, oportunidades misioneras (PLAN PEACE), Respuestas básicas a preguntas difíciles, estrategia misionera con propósito"
+            }
+        }
+    }
+}

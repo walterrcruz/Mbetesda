@@ -1,0 +1,131 @@
+<% include ./partials/header %>
+
+
+    <section id="slider" class="slider-parallax" style="background: url('/assets/images/landing/landing1.jpg') no-repeat; background-size: cover" data-height-lg="600" data-height-md="500" data-height-sm="400" data-height-xs="300" data-height-xxs="250">
+        <div class="slider-parallax-inner">
+
+            <div class="container clearfix">
+                <div class="vertical-middle dark center">
+
+                    <div class="heading-block nobottommargin center">
+                        <h1>
+                            <span class="text-rotater nocolor" data-separator="|" data-rotate="flipInX" data-speed="3500">
+									Clase  <span class="t-rotate">101|201|301|401</span>
+                            </span>
+                        </h1>
+                        <span class="hidden-xs">“Estas clases te ayudaran a conocer nuestra iglesia y a fortalezer la fe y el proposito que Dios tiene para tu vida.”</span>
+                    </div>
+
+                    <a href="#informacion" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>Mas Informacion</span></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Title
+		============================================= -->
+    <section id="page-title" class="page-title-center">
+
+        <div class="container clearfix">
+            <h1>
+                <%= des.pageTitle %>
+            </h1>
+
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a></li>
+                <li class="active">Seminario</li>
+
+            </ol>
+        </div>
+
+    </section>
+    <!-- #page-title end -->
+
+    <!-- Content
+        ============================================= -->
+    <div id="informacion"></div>
+    <section id="content">
+
+        <div class="content-wrap">
+
+
+            <div class="container clearfix">
+
+                <div id="side-navigation">
+
+                    <div class="col_one_third nobottommargin">
+
+                        <ul class="sidenav">
+                            <li class="ui-tabs-active"><a href="#101"><i class="icon-screen"></i><%= des.desarrollo.clase1.title %><i class="icon-chevron-right"></i></a></li>
+                            <li><a href="#201"><i class="icon-magic"></i><%= des.desarrollo.clase2.title %><i class="icon-chevron-right"></i></a></li>
+                            <li><a href="#301"><i class="icon-star3"></i><%= des.desarrollo.clase3.title %><i class="icon-chevron-right"></i></a></li>
+                            <li><a href="#401"><i class="icon-checkmark"></i><%= des.desarrollo.clase4.title %><i class="icon-chevron-right"></i></a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col_two_third col_last nobottommargin">
+
+                        <div id="<%= des.desarrollo.clase1.title %>">
+                            <div class="heading-block">
+                                <h3>
+                                    <%= des.desarrollo.clase1.description.title %>
+                                </h3>
+                                <span>Ministerios Betesda</span>
+                            </div>
+                            <img src="<%= des.desarrollo.clase1.image.src %>" alt="" class="alignleft" style="max-width: 320px;">
+                            <p>
+                                <%= des.desarrollo.clase1.description.paragraph %>
+                            </p>
+                        </div>
+                        <div id="<%= des.desarrollo.clase2.title %>">
+                            <div class="heading-block">
+                                <h3>
+                                    <%= des.desarrollo.clase2.description.title %>
+                                </h3>
+                                <span>Ministerios Betesda</span>
+                            </div>
+                            <img src="<%= des.desarrollo.clase2.image.src %>" alt="" class="alignleft" style="max-width: 320px;">
+                            <p>
+                                <%= des.desarrollo.clase2.description.paragraph %>
+                            </p>
+                        </div>
+                        <div id="<%= des.desarrollo.clase3.title %>">
+                            <div class="heading-block">
+                                <h3>
+                                    <%= des.desarrollo.clase3.description.title %>
+                                </h3>
+                                <span>Ministerios Betesda</span>
+                            </div>
+                            <img src="<%= des.desarrollo.clase3.image.src %>" alt="" class="alignleft" style="max-width: 320px;">
+                            <p>
+                                <%= des.desarrollo.clase3.description.paragraph %>
+                            </p>
+                        </div>
+                        <div id="<%= des.desarrollo.clase4.title %>">
+                            <div class="heading-block">
+                                <h3>
+                                    <%= des.desarrollo.clase4.description.title %>
+                                </h3>
+                                <span>Ministerios Betesda</span>
+                            </div>
+                            <img src="<%= des.desarrollo.clase4.image.src %>" alt="" class="alignleft" style="max-width: 320px;">
+                            <p>
+                                <%= des.desarrollo.clase4.description.paragraph %>
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+    <!-- #content end -->
+
+
+    <% include ./partials/footer %>

@@ -1,43 +1,358 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>YelpCamp</title>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/main.css">
-    </head>
+<html dir="ltr" lang="en-US">
 
-<body>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/">YelpCamp</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-               <% if(!currentUser){ %>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Sign Up</a></li>
-               <% } else { %>
-                   <li><a href="#">Sign In As: <%= currentUser.username %></a></li>
-                   <li><a href="/logout">Logout</a></li>
-               <% } %>
-            </ul>
-        </div>
-    </div>
-</nav>
+<head>
 
-    <% if(error && error.length > 0){ %>
-        <div class="container">
-            <div class="alert alert-danger" role="alert"><%= error %></div>
-        </div>
-   <% }if (success && success.length > 0){ %>
-       <div class="container">
-           <div class="alert alert-success" role="alert"><%= success %></div>
-       </div>
-    <% }; %>
-    
-   
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="MinisteriosBetesda" />
 
+    <!-- Stylesheets
+	============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,800,900|Roboto%3A700%2C500%2C900%2C400" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/setup.css" type="text/css" />
+
+    <link rel="stylesheet" href="/assets/css/responsive.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="/assets/include/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/assets/include/rs-plugin/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="/assets/include/rs-plugin/css/navigation.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/include/rs-plugin/css/addons/revolution.addon.particles.css">
+    <!-- Document Title
         
-    
+    ============================================= -->
+
+
+
+    <title>Ministerios Betesda</title>
+
+    <style>
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: 'Raleway', sans-serif;
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+        
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .tp-video-play-button {
+            display: none !important;
+        }
+        
+        .tp-caption {
+            white-space: nowrap;
+        }
+    </style>
+
+
+
+    <style>
+        .demos-filter {
+            margin: 0;
+            text-align: right;
+        }
+        
+        .demos-filter li {
+            list-style: none;
+            margin: 10px 0px;
+        }
+        
+        .demos-filter li a {
+            display: block;
+            border: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+        }
+        
+        .demos-filter li a:hover,
+        .demos-filter li.activeFilter a {
+            color: #1ABC9C;
+        }
+        
+        @media (max-width: 991px) {
+            .demos-filter {
+                text-align: center;
+            }
+            .demos-filter li {
+                float: left;
+                width: 33.3%;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .demos-filter li {
+                width: 50%;
+            }
+        }
+        
+        #rev_slider_73_1 .uranus.tparrows {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0);
+        }
+        
+        #rev_slider_73_1 .uranus.tparrows:before {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+        }
+        
+        #rev_slider_73_1 .uranus.tparrows:hover:before {
+            opacity: 0.75;
+        }
+    </style>
+    <style>
+        .demos-filter {
+            margin: 0;
+            text-align: right;
+        }
+        
+        .demos-filter li {
+            list-style: none;
+            margin: 10px 0px;
+        }
+        
+        .demos-filter li a {
+            display: block;
+            border: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+        }
+        
+        .demos-filter li a:hover,
+        .demos-filter li.activeFilter a {
+            color: #1ABC9C;
+        }
+        
+        @media (max-width: 991px) {
+            .demos-filter {
+                text-align: center;
+            }
+            .demos-filter li {
+                float: left;
+                width: 33.3%;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .demos-filter li {
+                width: 50%;
+            }
+        }
+        
+        .tiny_bullet_slider .tp-bullet:before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 25px;
+            top: -12px;
+            left: 0px;
+            background: transparent
+        }
+        
+        #rev_slider_103_1 .uranus.tparrows {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0)
+        }
+        
+        #rev_slider_103_1 .uranus.tparrows:before {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 40px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s
+        }
+        
+        #rev_slider_103_1 .uranus.tparrows:hover:before {
+            opacity: 0.75
+        }
+        
+        .bullet-bar.tp-bullets {}
+        
+        .bullet-bar.tp-bullets:before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            padding: 10px;
+            margin-left: -10px;
+            margin-top: -10px;
+            box-sizing: content-box
+        }
+        
+        .bullet-bar .tp-bullet {
+            width: 60px;
+            height: 3px;
+            position: absolute;
+            background: #aaa;
+            background: rgba(204, 204, 204, 0.5);
+            cursor: pointer;
+            box-sizing: content-box
+        }
+        
+        .bullet-bar .tp-bullet:hover,
+        .bullet-bar .tp-bullet.selected {
+            background: rgba(204, 204, 204, 1)
+        }
+        
+        .bullet-bar .tp-bullet-image {}
+        
+        .bullet-bar .tp-bullet-title {}
+        
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+
+
+<body class="stretched">
+
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <!-- Header
+		============================================= -->
+        <header id="header" class="full-header clearfix">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+					============================================= -->
+                    <div id="logo">
+                        <a href="/" class="standard-logo" data-dark-logo="/assets/images2/logo.png"><img src="/assets/images2/logo.png" alt="Ministerios Betesda"></a>
+                        <a href="/" class="retina-logo" data-dark-logo="/assets/images2/logo2.png"><img src="/assets/images2/logo2.png" alt="Ministerios Betesda"></a>
+                    </div>
+                    <!-- #logo end -->
+
+                    <!-- Primary Navigation
+					============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li>
+                                <a href="/">
+                                    <div>Home</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/informacion">
+                                    <div>Informacion</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sermones">
+                                    <div>Sermones</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/informacion/seminario">
+                                    <div>Seminario</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/desarrollo">
+                                    <div>Desarrollo</div>
+                                </a>
+                            </li>
+                            <% if(!currentUser){ %>
+
+                                <% } else { %>
+                                    <li>
+                                        <a href="/logout">
+                                            <div>Logout</div>
+                                        </a>
+                                    </li>
+                                    <% } %>
+                                        <li>
+                                            <a href="/">
+                                                <img style="width: 70px; margin-top: -2em;" src="/assets/images2/pdc.png">
+                                            </a>
+                                        </li>
+
+                        </ul>
+
+                        <!-- Top Cart
+						============================================= -->
+
+
+                        <!-- Top Search
+						============================================= -->
+                        <!-- <div id="top-search">
+                            <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+                            <form action="search.html" method="get">
+                                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+                            </form>
+                        </div>-->
+                        <!-- #top-search end -->
+
+                    </nav>
+                    <!-- #primary-menu end -->
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- #header end -->
+
+        <% if(error && error.length > 0){ %>
+            <div class="container">
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            </div>
+            <% }if (success && success.length > 0){ %>
+                <div class="container">
+                    <div class="alert alert-success" role="alert">
+                        <%= success %>
+                    </div>
+                </div>
+                <% }; %>
