@@ -1,28 +1,35 @@
 .seminarioHeader {
     background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images2/office.jpg);
-    no-repeat;
+    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images2/office.jpg) no-repeat;
     background-size: cover;
 }
 
 .sermonesHeader {
     background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images/portfolio/parallax/camera.jpg);
-    no-repeat;
+    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images/portfolio/parallax/camera.jpg) no-repeat;
     background-size: cover;
 }
 
 .informacionHeader {
     background: /* top, transparent red, faked with gradient */
-    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images/portfolio/parallax/camera.jpg);
-    no-repeat;
+    linear-gradient( rgba(25, 0, 10, 0.45), rgba(25, 0, 10, 0.45)), url(/assets/images/portfolio/parallax/camera.jpg) no-repeat;
     background-size: cover;
 }
+
+
 
 .informacionPastores {
     padding: 60px 0;
     background-image: /* top, transparent red, faked with gradient */
     linear-gradient( rgba(25, 50, 110, 0.45), rgba(25, 50, 110, 0.45)), url(/assets/images2/preaching.jpg);
+    background-repeat: repeat-y;
+    height: auto;
+    background-size: cover;
+}
+.informacionUltimosSermones {
+    padding: 60px 0;
+    background-image: /* top, transparent red, faked with gradient */
+    linear-gradient( rgba(25, 50, 110, 0.45), rgba(25, 50, 110, 0.45)), url(/assets/images/portfolio/full/praying.jpg);
     background-repeat: repeat-y;
     height: auto;
     background-size: cover;
