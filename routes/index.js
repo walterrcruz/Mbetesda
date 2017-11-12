@@ -52,9 +52,6 @@ router.get("/logout", function(req, res) {
 
 //menu routes
 
-router.get('/desarrollo', (req, res) => {
-    res.render('desarrollo')
-})
 router.get('/sermones', (req, res) => {
     res.render('sermones')
 })

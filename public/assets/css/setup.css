@@ -1,17 +1,17 @@
 #del-countdown {
-    width: 850px;
-    margin: 15% auto;
+    width: 80%;
+    margin: .2em auto;
 }
 
 #clock span {
     float: left;
     text-align: center;
-    font-size: 84px;
+    font-size: 4rem;
     margin: 0 2.5%;
     color: #fff;
-    padding: 20px;
+    padding: 2%;
     width: 20%;
-    border-radius: 20px;
+    border-radius: 4%;
     box-sizing: border-box;
 }
 
@@ -44,9 +44,9 @@
     margin-top: 30px;
     color: #ddd;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 2em;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px rgba(10, 10, 10, 0.7);
+    text-shadow: 1px 1px 1px rgba(198, 178, 30, 0.865);
 }
 
 span.turn {

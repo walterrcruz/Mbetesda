@@ -26,6 +26,8 @@ router.get('/seminario', (req, res) => {
 router.get('/grupos', (req, res) => {
     res.render('informacion/grupos')
 })
-
+router.get('/desarrollo', (req, res) => {
+    res.render('informacion/desarrollo')
+})
 
 module.exports = router
