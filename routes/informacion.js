@@ -20,7 +20,7 @@ router.get('/historia', (req, res) => {
 router.get('/valores', (req, res) => {
     res.render('informacion/valores')
 })
-router.get('/seminario', (req, res) => {
+router.get('/vision', (req, res) => {
     res.render('informacion/vision')
 })
 router.get('/grupos', (req, res) => {
