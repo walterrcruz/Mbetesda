@@ -35,7 +35,7 @@ $(document).ready(function() {
                     videTitle = item.snippet.title;
                     videoId = item.snippet.resourceId.videoId;
                     description = item.snippet.description;
-                    output = '<div class="col-md-6"><iframe frameborder="0" width="500" height="315"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
+                    output = '<div class="col-md-6"><iframe frameborder="0" width="100%" height="300"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
                     //Append to results listStyleType
                     $('#results').append(output);
                 })
@@ -82,7 +82,7 @@ $(document).ready(function() {
                     videTitle = item.snippet.title;
                     videoId = item.snippet.resourceId.videoId;
                     description = item.snippet.description;
-                    output = '<div class="col-md-4"><iframe frameborder="0" width="350" height="200"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
+                    output = '<div class="col-md-6 col-sm-12"><iframe frameborder="0" width="100%" height="50%"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
                     //Append to results listStyleType
                     $('#latest').append(output);
                 })
