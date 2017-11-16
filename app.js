@@ -64,6 +64,6 @@ app.use("/informacion", informacionRoutes);
 app.use("/serie/:id/comments", commentRoutes);
 
 app.listen(port, () => {
-    console.log("initiated on port: " + port);
+    console.log("iniciar en puerto: " + port);
 
 });
