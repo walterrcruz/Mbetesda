@@ -66,7 +66,7 @@ $(document).ready(function() {
         $.get(
             "https://www.googleapis.com/youtube/v3/playlistItems", {
                 part: 'snippet',
-                maxResults: 3,
+                maxResults: 4,
                 playlistId: pid,
                 key: 'AIzaSyD7nUMpyJsJHJDBq7z8lC9aD3FX6dNJ2gs'
             },
@@ -82,7 +82,7 @@ $(document).ready(function() {
                     videTitle = item.snippet.title;
                     videoId = item.snippet.resourceId.videoId;
                     description = item.snippet.description;
-                    output = '<div class="col-md-6 col-sm-12"><iframe frameborder="0" width="100%" height="50%"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
+                    output = '<div class="col-md-6 col-sm-12"><iframe frameborder="0" width="100%" height="300"  src=\"//www.youtube.com/embed/' + videoId + '\" allowfullscreen></iframe><h4 class="header">' + videTitle + '</h4><p>' + description + '</p><p>Fecha de publicacion: ' + date.toDateString() + '</p></div>';
                     //Append to results listStyleType
                     $('#latest').append(output);
                 })
@@ -140,6 +140,6 @@ function startTimer(id, deadline) {
 
 
 window.onload = function() {
-    var deadline = new Date("November 19, 2017 13:00:00");
+    var deadline = new Date("November 26, 2017 13:00:00");
     startTimer("clock", deadline);
 };

@@ -16,9 +16,9 @@ var express = require("express"),
 var commentRoutes = require("./routes/comments"),
     // campgroundRoutes = require("./routes/campgrounds"),
     serieRoutes = require("./routes/serie"),
-    indexRoutes = require("./routes/index");
-informacionRoutes = require("./routes/informacion");
-// mainRoutes = require("./routes/main"),
+    indexRoutes = require("./routes/index"),
+    informacionRoutes = require("./routes/informacion")
+    // mainRoutes = require("./routes/main"),
 app.locals.des = require("./betesda.json");
 
 
